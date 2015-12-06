@@ -1,0 +1,25 @@
+﻿Build started 06.12.2015 12:24:42.
+     1>Project "C:\Users\MicrowaveStd\Documents\Visual Studio 2015\Projects\um\ntapihook\ntapihook\ntapihook.vcxproj" on node 2 (Rebuild target(s)).
+     1>_MASM:
+         Assembling auxfuncs.asm...
+         cmd.exe /C "C:\Users\MicrowaveStd\AppData\Local\Temp\tmp760bf1fbe8d54a30959187fb96daadd1.cmd"
+         ml64.exe /c /nologo /Zf /Zi /Fo"x64\Release\auxfuncs.obj" /W3 /errorReport:prompt /Gy  /Taauxfuncs.asm
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /nologo /W4 /WX- /O1 /Ob1 /Oi /Os /Oy /GL /D _UNICODE /D UNICODE /D _WIN64 /D _AMD64_ /D AMD64 /D _UNICODE /D UNICODE /Gm- /GS- /Gy /fp:fast /fp:except- /Zc:wchar_t /Zc:forScope /Zc:inline /GR- /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gz /TC /Zl /errorReport:prompt dispatch.c hook.c main.c
+         dispatch.c
+         hook.c
+         main.c
+     1>main.c(155): warning C4020: 'NtSuspendProcess': too many actual parameters
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\MicrowaveStd\Documents\Visual Studio 2015\Projects\um\ntapihook\x64\Release\ntapihook.exe" /VERSION:"6.1" /INCREMENTAL:NO /NOLOGO "C:\Users\MicrowaveStd\Documents\Visual Studio 2015\Projects\um\ntapihook\ntapihook\Libraries\myntdll.bin" /NODEFAULTLIB /MANIFEST:NO /DEBUG /PDB:"C:\Users\MicrowaveStd\Documents\Visual Studio 2015\Projects\um\ntapihook\x64\Release\ntapihook.pdb" /MAP /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /ORDER:@"func_order.txt" /LTCG /TLBID:1 /WINMD:NO /ENTRY:"mymain" /RELEASE /DYNAMICBASE /FIXED:NO /NXCOMPAT /IMPLIB:"C:\Users\MicrowaveStd\Documents\Visual Studio 2015\Projects\um\ntapihook\x64\Release\ntapihook.lib" /MACHINE:X64 /CLRSupportLastError:NO /SAFESEH:NO x64\Release\dispatch.obj
+         x64\Release\hook.obj
+         x64\Release\main.obj
+         x64\Release\auxfuncs.obj
+         Generating code
+         Finished generating code
+         ntapihook.vcxproj -> C:\Users\MicrowaveStd\Documents\Visual Studio 2015\Projects\um\ntapihook\x64\Release\ntapihook.exe
+     1>Done Building Project "C:\Users\MicrowaveStd\Documents\Visual Studio 2015\Projects\um\ntapihook\ntapihook\ntapihook.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.03

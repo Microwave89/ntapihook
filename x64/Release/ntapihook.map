@@ -1,0 +1,124 @@
+ ntapihook
+
+ Timestamp is 56641afd (Sun Dec  6 12:24:45 2015)
+
+ Preferred load address is 0000000140000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000a66H .text$mn                CODE
+ 0002:00000000 000000a0H .idata$5                DATA
+ 0002:000000a0 000003f4H .rdata                  DATA
+ 0002:00000494 00000174H .rdata$zzzdbg           DATA
+ 0002:00000608 00000074H .xdata                  DATA
+ 0002:0000067c 00000000H .edata                  DATA
+ 0002:0000067c 00000014H .idata$2                DATA
+ 0002:00000690 00000014H .idata$3                DATA
+ 0002:000006a8 000000a0H .idata$4                DATA
+ 0002:00000748 00000192H .idata$6                DATA
+ 0003:00000000 00000000H .data                   DATA
+ 0003:00000000 00001010H .bss                    DATA
+ 0004:00000000 00000054H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0001:00000000       getDispatchBegin           0000000140001000 f   dispatch.obj
+ 0001:00000010       syscallStub                0000000140001010 f   auxfuncs.obj
+ 0001:0000002c       newNtUserGetUpdateRect     000000014000102c f   dispatch.obj
+ 0001:000000e8       getDispatchEnd             00000001400010e8 f   dispatch.obj
+ 0001:0000036c       getRtSectionAddress        000000014000136c f   hook.obj
+ 0001:00000614       copyDispatchCode           0000000140001614 f   hook.obj
+ 0001:00000720       setNtHook                  0000000140001720 f   hook.obj
+ 0001:000007b8       openProcByName             00000001400017b8 f   main.obj
+ 0001:000009d0       mymain                     00000001400019d0 f   main.obj
+ 0001:00000a60       memset                     0000000140001a60 f   myntdll:ntdll.dll
+ 0002:00000000       __imp_RtlWriteRegistryValue 0000000140002000     myntdll:ntdll.dll
+ 0002:00000008       __imp__vsnwprintf          0000000140002008     myntdll:ntdll.dll
+ 0002:00000010       __imp_NtQueryVirtualMemory 0000000140002010     myntdll:ntdll.dll
+ 0002:00000018       __imp_RtlCheckRegistryKey  0000000140002018     myntdll:ntdll.dll
+ 0002:00000020       __imp_RtlCreateRegistryKey 0000000140002020     myntdll:ntdll.dll
+ 0002:00000028       __imp_NtReadVirtualMemory  0000000140002028     myntdll:ntdll.dll
+ 0002:00000030       __imp_NtProtectVirtualMemory 0000000140002030     myntdll:ntdll.dll
+ 0002:00000038       __imp_NtWriteVirtualMemory 0000000140002038     myntdll:ntdll.dll
+ 0002:00000040       __imp_RtlCompareUnicodeString 0000000140002040     myntdll:ntdll.dll
+ 0002:00000048       __imp_NtFreeVirtualMemory  0000000140002048     myntdll:ntdll.dll
+ 0002:00000050       __imp_NtQuerySystemInformation 0000000140002050     myntdll:ntdll.dll
+ 0002:00000058       __imp_NtOpenProcess        0000000140002058     myntdll:ntdll.dll
+ 0002:00000060       __imp_RtlInitUnicodeString 0000000140002060     myntdll:ntdll.dll
+ 0002:00000068       __imp_LdrLoadDll           0000000140002068     myntdll:ntdll.dll
+ 0002:00000070       __imp_NtAllocateVirtualMemory 0000000140002070     myntdll:ntdll.dll
+ 0002:00000078       __imp_NtClose              0000000140002078     myntdll:ntdll.dll
+ 0002:00000080       __imp_NtQueryObject        0000000140002080     myntdll:ntdll.dll
+ 0002:00000088       __imp_NtSuspendProcess     0000000140002088     myntdll:ntdll.dll
+ 0002:00000090       __imp_memset               0000000140002090     myntdll:ntdll.dll
+ 0002:00000098       \177ntdll_NULL_THUNK_DATA  0000000140002098     myntdll:ntdll.dll
+ 0002:000000a0       ??_C@_1FA@NGKENGGM@?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AA?5?$AAB?$AAa?$AAs?$AAi?$AAc?$AA?5?$AAV?$AAl?$AAm?$AA?5?$AAI?$AAn?$AAf?$AAo?$AA?5?$AA?$HM?$AA?5?$AAF?$AAo?$AAu?$AAn?$AAd?$AA?5?$AAa?$AAn@ 00000001400020a0     hook.obj
+ 0002:000000f0       ??_C@_1CM@DPBPLLGP@?$AAm?$AAe?$AAm?$AAV?$AAl?$AAm?$AAI?$AAn?$AAf?$AAo?$AA?4?$AAT?$AAy?$AAp?$AAe?$AA?3?$AA?5?$AA?$CF?$AAl?$AAl?$AAX?$AA?$AA@ 00000001400020f0     hook.obj
+ 0002:00000120       ??_C@_1DI@OKMKMFKG@?$AAm?$AAe?$AAm?$AAV?$AAl?$AAm?$AAI?$AAn?$AAf?$AAo?$AA?4?$AAP?$AAr?$AAo?$AAt?$AAe?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?3?$AA?5?$AA?$CF?$AAl?$AAl?$AAX?$AA?$AA@ 0000000140002120     hook.obj
+ 0002:00000158       ??_C@_1DC@PEPGBNDG@?$AAm?$AAe?$AAm?$AAV?$AAl?$AAm?$AAI?$AAn?$AAf?$AAo?$AA?4?$AAI?$AAm?$AAa?$AAg?$AAe?$AAB?$AAa?$AAs?$AAe?$AA?3?$AA?5?$AA?$CF?$AAp?$AA?$AA@ 0000000140002158     hook.obj
+ 0002:00000190       ??_C@_1DK@HLDGAABK@?$AAm?$AAe?$AAm?$AAV?$AAl?$AAm?$AAI?$AAn?$AAf?$AAo?$AA?4?$AAS?$AAi?$AAz?$AAe?$AAO?$AAf?$AAI?$AAm?$AAa?$AAg?$AAe?$AA?3?$AA?5?$AA?$CF?$AAl?$AAl?$AAX?$AA?$AA@ 0000000140002190     hook.obj
+ 0002:000001d0       ??_C@_1DC@FPFCNENL@?$AAm?$AAe?$AAm?$AAV?$AAl?$AAm?$AAI?$AAn?$AAf?$AAo?$AA?4?$AAU?$AAn?$AAk?$AAn?$AAo?$AAw?$AAn?$AA?3?$AA?5?$AA?$CF?$AAl?$AAl?$AAX?$AA?$AA@ 00000001400021d0     hook.obj
+ 0002:00000208       ??_C@_17FKMEKEMI@?$AA?$CF?$AAl?$AAX?$AA?$AA@ 0000000140002208     hook.obj
+ 0002:00000210       ??_C@_1FM@NIPMBHOH@?$AAE?$AAx?$AAe?$AAc?$AAu?$AAt?$AAa?$AAb?$AAl?$AAe?$AA?5?$AAs?$AAe?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAs?$AAt?$AAa?$AAr?$AAt?$AAs?$AA?5?$AA?$EA?$AA?5?$AA?$CF?$AAp?$AA?5?$AAw@ 0000000140002210     hook.obj
+ 0002:00000270       ??_C@_1FC@PPBKACPN@?$AAC?$AAo?$AAd?$AAe?$AA?5?$AAc?$AAa?$AAv?$AAe?$AA?5?$AA?$EA?$AA?5?$AA?$CF?$AAp?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?4?$AA?5?$AAL?$AAi?$AAk?$AAe?$AAl?$AAy?$AA?5?$AAR?$AAT?$AA?5@ 0000000140002270     hook.obj
+ 0002:000002d0       ??_C@_1EA@CKKBKBGJ@?$AAg?$AAe?$AAt?$AAR?$AAt?$AAS?$AAe?$AAc?$AAt?$AAi?$AAo?$AAn?$AAA?$AAd?$AAd?$AAr?$AAe?$AAs?$AAs?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?3?$AA?5?$AA?$CF?$AAl?$AAX?$AA?$AA@ 00000001400022d0     hook.obj
+ 0002:00000310       ??_C@_1CI@KABMJMMN@?$AAc?$AAo?$AAd?$AAe?$AA?5?$AAc?$AAa?$AAv?$AAe?$AA?5?$AAs?$AAt?$AAa?$AAr?$AAt?$AA?3?$AA?5?$AA?$CF?$AAp?$AA?$AA@ 0000000140002310     hook.obj
+ 0002:00000338       ??_C@_1CK@BLBBAACO@?$AAs?$AAi?$AAz?$AAe?$AAO?$AAf?$AAD?$AAi?$AAs?$AAp?$AAa?$AAt?$AAc?$AAh?$AA?3?$AA?5?$AA?$CF?$AAl?$AAl?$AAd?$AA?$AA@ 0000000140002338     hook.obj
+ 0002:00000368       ??_C@_1BK@JOGNLGGG@?$AAz?$AAu?$AAu?$AAc?$AAc?$AAz?$AAu?$AAz?$AAo?$AAz?$AAv?$AAi?$AA?$AA@ 0000000140002368     hook.obj
+ 0002:00000384       ??_C@_15FDPMHKKH@?$AAu?$AAi?$AA?$AA@ 0000000140002384     hook.obj
+ 0002:0000038c       ??_C@_13JIJFJIGK@?$AAi?$AA?$AA@ 000000014000238c     hook.obj
+ 0002:00000390       ??_C@_1BG@OILDLIOJ@?$AAu?$AAs?$AAe?$AAr?$AA3?$AA2?$AA?4?$AAd?$AAl?$AAl?$AA?$AA@ 0000000140002390     main.obj
+ 0002:000003a8       ??_C@_1BI@DNKHHAHM@?$AAn?$AAo?$AAt?$AAe?$AAp?$AAa?$AAd?$AA?4?$AAe?$AAx?$AAe?$AA?$AA@ 00000001400023a8     main.obj
+ 0002:000003c0       ??_C@_1CM@EFMIGJLA@?$AA?2?$AAs?$AAy?$AAs?$AAt?$AAe?$AAm?$AAr?$AAo?$AAo?$AAt?$AA?2?$AAs?$AAy?$AAs?$AAt?$AAe?$AAm?$AA3?$AA2?$AA?2?$AA?$AA@ 00000001400023c0     main.obj
+ 0002:000003f0       ??_C@_1EO@JCKMEBFA@?$AAu?$AAi?$AAi?$AAb?$AAb?$AAi?$AAu?$AAb?$AAi?$AAo?$AAu?$AAv?$AAv?$AAu?$AAa?$AAv?$AAv?$AAa?$AAs?$AAd?$AAa?$AAs?$AAd?$AAv?$AAs?$AAv?$AAd?$AAa?$AAa?$AAs?$AAd?$AAv@ 00000001400023f0     main.obj
+ 0002:0000067c       __IMPORT_DESCRIPTOR_ntdll  000000014000267c     myntdll:ntdll.dll
+ 0002:00000690       __NULL_IMPORT_DESCRIPTOR   0000000140002690     myntdll:ntdll.dll
+
+ entry point at        0001:000009d0
+
+ Static symbols
+
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0000:ffffa000       .debug$S                   0000000140000000     myntdll:ntdll.dll
+ 0001:00000010       $$000000                   0000000140001010     auxfuncs.obj
+ 0001:000000f4       myWPrintf                  00000001400010f4 f   main.obj
+ 0001:000000f4       myWPrintf                  00000001400010f4 f   hook.obj
+ 0002:00000608       $unwind$newNtUserGetUpdateRect 0000000140002608     dispatch.obj
+ 0002:00000610       $unwind$myWPrintf          0000000140002610     hook.obj
+ 0002:00000610       $unwind$myWPrintf          0000000140002610     main.obj
+ 0002:00000624       $unwind$getRtSectionAddress 0000000140002624     hook.obj
+ 0002:0000063c       $unwind$copyDispatchCode   000000014000263c     hook.obj
+ 0002:00000650       $unwind$setNtHook          0000000140002650     hook.obj
+ 0002:00000660       $unwind$openProcByName     0000000140002660     main.obj
+ 0002:00000674       $unwind$mymain             0000000140002674     main.obj
+ 0002:000008c6       .idata$6                   00000001400028c6     myntdll:ntdll.dll
+ 0003:00000000       ?s_dispatchCodeCopied@?1??setNtHook@@9@9 0000000140003000     hook.obj
+ 0003:00000010       sg_pFullImageHdr           0000000140003010     hook.obj
+ 0004:00000000       $pdata$newNtUserGetUpdateRect 0000000140005000     dispatch.obj
+ 0004:0000000c       $pdata$myWPrintf           000000014000500c     main.obj
+ 0004:0000000c       $pdata$myWPrintf           000000014000500c     hook.obj
+ 0004:00000018       $pdata$getRtSectionAddress 0000000140005018     hook.obj
+ 0004:00000024       $pdata$copyDispatchCode    0000000140005024     hook.obj
+ 0004:00000030       $pdata$setNtHook           0000000140005030     hook.obj
+ 0004:0000003c       $pdata$openProcByName      000000014000503c     main.obj
+ 0004:00000048       $pdata$mymain              0000000140005048     main.obj

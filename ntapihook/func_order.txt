@@ -1,0 +1,4 @@
+getDispatchBegin
+syscallStub
+newNtUserGetUpdateRect
+getDispatchEnd
