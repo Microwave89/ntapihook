@@ -1,7 +1,7 @@
 # ntapihook
 Attempt to Create a Simple and Light-weight Hook Engine Without Use of an LDE
 
-STATUS/TODO: Finds a 3 KB code cave (RT, PAGE) and in the target process copies the dispatch code there. No hooking implemented yet.
+STATUS/TODO: Successfully finds a 3 KB code cave (RT, PAGE) and in the target process copies the dispatch code there. No hooking implemented yet.
 How to properly get dispatch code size with the smallest code? And code cave scanning needs to be simplified to only search ntdll.dll.
 
 When attempting to detour a function one normally overwrites part of its first instructions with an unconditional jump to a new function. As the overwritten bytes constitute part of the function the hook engine will them save beforehand. When the target process calls into the hooked function later on, it will eventually execute the saved bytes and then return control to the original function.
